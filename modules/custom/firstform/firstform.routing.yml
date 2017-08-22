@@ -1,0 +1,17 @@
+my_form.form:
+  path: '/myform'
+  defaults:
+    _title: 'Myform - Form API example.'
+    # Подгружаем форму по неймспейсу.
+    _form: '\Drupal\firstform\Form\MyForm'
+  requirements:
+    _permission: 'access content'
+
+
+config_form.admin_settings:
+  path: '/admin/config/firstform'
+  defaults:
+    _form: '\Drupal\firstform\Form\ConfigFormSettings'
+    _title: 'Settings for MyForm.'
+  requirements:
+    _permission: 'administer site configuration'

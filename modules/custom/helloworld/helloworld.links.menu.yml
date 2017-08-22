@@ -1,0 +1,6 @@
+helloworld.link:
+  title: 'My Module'
+  description: 'Example Link'
+  menu_name: main
+  route_name: helloworld.hellopage
+  weight: 100

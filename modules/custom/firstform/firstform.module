@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ */
+
+	  /**
+	 * Implements hook_form_FORM_ID_alter().
+	 * Form ID: collect_phone
+	 */
+	function firstform_form_my_form_alter(&$form, &$form_state) {
+	  $form['phone_number']['#description'] = t('Start with + and your country code.');
+	}
