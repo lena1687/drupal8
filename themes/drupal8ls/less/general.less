@@ -1,0 +1,22 @@
+@import "library";
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-size: 16px;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 11px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 10px;
+    }
+}
+body {
+  font-family: @font-roboto;
+}

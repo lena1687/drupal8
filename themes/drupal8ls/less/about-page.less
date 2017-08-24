@@ -1,0 +1,63 @@
+@import "library";
+
+.about-page {
+  background-color: @color-light-blue;
+    .strip {
+      .strip;
+      height: 680px;
+      @media screen and (max-width: 1199px) {
+        background-position: -200px -150px;
+        height: 600px;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .block-left {
+      h1 {
+        font-family: @font-monserrat;
+        font-weight: bold;
+        margin-top: 10%;
+      }
+      p {
+        font-size: 1.28571rem;
+      }
+      .first-content {
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+      .second-content {
+        margin-bottom: 50px;
+      }
+    }
+    .gallery {
+      width: 405px;
+      height: 405px;
+      margin: 25% 5% 10%;
+      margin-right: 0;
+        .gallery-item {
+          padding: 1px;
+          & img {
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+            &:hover {
+              opacity: 0.6;
+              filter: alpha(opacity=60);
+            }
+            @media screen and (max-width: 575px) {
+              width: 148px;
+              height: 148px;
+            }
+          }
+      }
+      @media screen and (max-width: 991px) {
+        margin: 0 auto 5%;
+        display: block;
+      }
+      @media screen and (max-width: 575px) {
+        width: 300px;
+        height: 300px;
+      }
+    }
+}

@@ -1,0 +1,6 @@
+name: Print messages
+description: 'Printmessages module - Block with form API!'
+type: module
+core: 8.x
+version: 1.0
+package: Examples

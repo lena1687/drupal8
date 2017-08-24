@@ -1,0 +1,27 @@
+@font-roboto: 'Roboto', sans-serif;
+@font-monserrat: 'Montserrat', sans-serif;
+@color-black: #292b2c;
+@color-hover-grin: #17936e;
+@color-light-pink: rgb(255, 214, 211);
+@color-light-grin: rgb(0, 234, 164);
+@color-light-blue: rgba(49, 176, 213, 0.52);
+@color-gray: #636363;
+@color-white: #ffffff;
+.strip {
+  width: 670px;
+  height: 630px;
+  position: absolute;
+  background: url('../img/bg.png') no-repeat -107px -77px;
+  z-index: -1;
+}
+.grin-button {
+  padding: 0 15px;
+  height: 52px;
+  color: @color-white;
+  background-color: @color-light-grin;
+  text-shadow: @color-black 2px 1px 1px;
+  box-shadow: 0 0 2px 1px @color-hover-grin;
+  line-height: 52px;
+  border-radius: 5px;
+  cursor: pointer;
+}

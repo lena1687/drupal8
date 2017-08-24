@@ -1,0 +1,28 @@
+core: 8.x
+type: theme
+base theme: bootstrap #если тема с нуля, то пишем false.
+
+name: 'drupal8ls'
+description: 'Bootstrap Sub-Theme - drupal8ls'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  top-header-tel: 'Top Header - tel'
+  top-header-soc: 'Top Header - social'
+  bottom-header-logo: 'Bottom Header - logo'
+  bottom-header-menu: 'Bottom Header - menu'
+  content: 'Content'
+  left-side: 'Left side on the page'
+  right-side: 'Right side on the page'
+  feedback: 'Feedback'
+  footer-copyright: 'Footer copyright'
+  footer-mail: 'Footer mail'
+  highlighted: Highlighted
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'drupal8ls/global-styling'

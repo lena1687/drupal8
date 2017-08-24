@@ -1,0 +1,124 @@
+@import "library";
+
+header {
+  color: #ffffff;
+  .top-header {
+    background-color: @color-light-grin;
+      .telefon {
+        line-height: 2.5;
+          & .number-tel {
+            font-size: 1.14286rem;
+            padding-left: 10px;
+            vertical-align: middle;
+            text-decoration: none;
+            color: @color-black;
+              &:hover,
+              &:active,
+              &:focus {
+                transform: scale(1.5);
+                text-decoration: none;
+                color: @color-hover-grin;
+              }
+            }
+        @media screen and (max-width: 1199px) {
+          line-height: 3.5;
+        }
+      }
+      .social {
+          a {
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            background: url('../img/social.png') no-repeat;
+            margin: 5px 0;
+          }
+          .vk {
+            background-position: left center;
+          }
+          .ok {
+              background-position: center;
+           }
+          .my-space {
+              background-position: -65px center;
+           }
+      }
+  }
+  .bottom-header {
+    background-color: @color-light-pink;
+    width: 100%;
+      .header-logo {
+        width: 50%;
+          img {
+            margin: 2px 0;
+          }
+      @media screen and (max-width: 767px) {
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+      .header-menu.navbar-nav.navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        line-height: 3;
+        width: 100%;
+          li {
+            width: 105px;
+            display: inline-block;
+              &>a {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: @color-black;
+                margin-right: 30px;
+                padding: 10px 0 0px;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                  &:hover {
+                    background: transparent;
+                    transform: scale(1.1);
+                    text-decoration: none;
+                    color: @color-hover-grin;
+                    border-bottom: 1px solid @color-hover-grin;
+                  }
+                  &:hover,
+                  &:active,
+                  &:focus {
+                    margin-right: 0;
+                  }
+              }
+            @media screen and (max-width: 991px) {
+              width: 80px;
+            }
+            @media screen and (max-width: 575px) {
+              margin-right: 0;
+              text-align: center;
+              width: 100%;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            margin: 0 auto;
+            width: 100%;
+          }
+          @media screen and (max-width: 575px) {
+            display: block;
+            padding-left: 10px;
+          }
+      }
+    .navbar-toggler {
+      font-size: 1.5rem;
+      border: 1px solid @color-black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: @color-light-grin;
+      &:hover,
+      &:active,
+      &:focus {
+        box-sizing: content-box;
+        outline: none;
+      }
+    }
+  }
+}
